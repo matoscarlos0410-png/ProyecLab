@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>ProyecLab | Sausal</title>
+
+  <!-- ICONO DEL SITIO CREADO DIRECTAMENTE EN CÓDIGO -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230b1220'/%3E%3Cpath d='M25 68 L50 25 L75 68' fill='none' stroke='%2300e5ff' stroke-width='9' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='50' cy='25' r='8' fill='%237c3aed'/%3E%3C/svg%3E">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- FONDO ANIMADO -->
+  <div class="background">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <!-- NAVEGACIÓN -->
+  <header class="navbar">
+    <div class="brand">
+      <div class="logo">
+        <svg viewBox="0 0 100 100">
+          <path d="M25 68 L50 25 L75 68"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="9"
+                stroke-linecap="round"
+                stroke-linejoin="round"/>
+          <circle cx="50" cy="25" r="8" fill="currentColor"/>
+        </svg>
+      </div>
+
+      <div>
+        <h1>ProyecLab</h1>
+        <small>Descubre • Conecta • Valora</small>
+      </div>
+    </div>
+
+    <button class="menu-btn" id="menuBtn">☰</button>
+
+    <nav id="navMenu">
+      <a href="#inicio">Inicio</a>
+      <a href="#explora">Explora</a>
+      <a href="#cultura">Cultura</a>
+      <a href="#proyecto">Proyecto</a>
+    </nav>
+  </header>
+
+  <!-- INICIO -->
+  <main id="inicio">
+
+    <section class="hero">
+
+      <div class="hero-content">
+
+        <span class="tag">PROYECTO DE EMPRENDIMIENTO • EPT</span>
+
+        <h2>
+          Conoce
+          <span>Sausal</span>
+          desde un solo lugar.
+        </h2>
+
+        <p>
+          ProyecLab es una propuesta digital que reúne información
+          sobre los productos, servicios, lugares, actividades,
+          costumbres y tradiciones de nuestra comunidad.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#explora" class="primary-btn">
+            Explorar Sausal →
+          </a>
+
+          <a href="#proyecto" class="secondary-btn">
+            Conocer el proyecto
+          </a>
+        </div>
+
+      </div>
+
+      <div class="hero-card">
+
+        <div class="mini-logo">
+          <svg viewBox="0 0 100 100">
+            <path d="M25 68 L50 25 L75 68"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"/>
+            <circle cx="50" cy="25" r="7" fill="currentColor"/>
+          </svg>
+        </div>
+
+        <h3>ProyecLab</h3>
+        <p>Una ventana digital hacia Sausal.</p>
+
+        <div class="stats">
+          <div>
+            <strong>01</strong>
+            <span>Comunidad</span>
+          </div>
+
+          <div>
+            <strong>∞</strong>
+            <span>Historias</span>
+          </div>
+
+          <div>
+            <strong>+</strong>
+            <span>Oportunidades</span>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- EXPLORA -->
+    <section id="explora" class="section">
+
+      <div class="section-title">
+        <span>01</span>
+        <div>
+          <h2>Explora Sausal</h2>
+          <p>Encuentra información útil de nuestra comunidad.</p>
+        </div>
+      </div>
+
+      <div class="cards">
+
+        <article class="card">
+          <div class="card-icon">🛍️</div>
+          <h3>Productos y servicios</h3>
+          <p>
+            Conoce productos y servicios que pueden encontrarse
+            dentro de la comunidad.
+          </p>
+          <button onclick="showInfo('productos')">
+            Ver información
+          </button>
+        </article>
+
+        <article class="card">
+          <div class="card-icon">📍</div>
+          <h3>Lugares</h3>
+          <p>
+            Descubre lugares importantes y espacios que forman
+            parte de Sausal.
+          </p>
+          <button onclick="showInfo('lugares')">
+            Explorar lugares
+          </button>
+        </article>
+
+        <article class="card">
+          <div class="card-icon">🎉</div>
+          <h3>Actividades</h3>
+          <p>
+            Conoce actividades y acontecimientos que se realizan
+            en la comunidad.
+          </p>
+          <button onclick="showInfo('actividades')">
+            Ver actividades
+          </button>
+        </article>
+
+      </div>
+
+    </section>
+
+    <!-- CULTURA -->
+    <section id="cultura" class="section culture">
+
+      <div class="section-title">
+        <span>02</span>
+        <div>
+          <h2>Cultura e identidad</h2>
+          <p>Una comunidad también se conoce por sus historias.</p>
+        </div>
+      </div>
+
+      <div class="culture-grid">
+
+        <div class="culture-box">
+          <span>🏛️</span>
+          <h3>Costumbres</h3>
+          <p>
+            Espacio pensado para presentar las costumbres
+            representativas de Sausal.
+          </p>
+        </div>
+
+        <div class="culture-box">
+          <span>🎶</span>
+          <h3>Tradiciones</h3>
+          <p>
+            Un lugar para conservar y compartir tradiciones
+            transmitidas entre generaciones.
+          </p>
+        </div>
+
+        <div class="culture-box">
+          <span>📖</span>
+          <h3>Historias</h3>
+          <p>
+            Relatos y acontecimientos que ayudan a conocer
+            la identidad de la comunidad.
+          </p>
+        </div>
+
+        <div class="culture-box">
+          <span>🌱</span>
+          <h3>Identidad local</h3>
+          <p>
+            Promueve el reconocimiento y valoración de
+            los recursos culturales de Sausal.
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- PROBLEMA Y SOLUCIÓN -->
+    <section id="proyecto" class="section project">
+
+      <div class="section-title">
+        <span>03</span>
+        <div>
+          <h2>El proyecto</h2>
+          <p>La idea detrás de ProyecLab.</p>
+        </div>
+      </div>
+
+      <div class="project-grid">
+
+        <div class="problem">
+          <span>EL PROBLEMA</span>
+
+          <h3>
+            Información local dispersa
+          </h3>
+
+          <p>
+            En la comunidad existe información sobre productos,
+            servicios, lugares, actividades, costumbres y
+            tradiciones, pero no siempre está organizada y
+            disponible en un solo espacio.
+          </p>
+        </div>
+
+        <div class="solution">
+          <span>LA SOLUCIÓN</span>
+
+          <h3>
+            Una plataforma para Sausal
+          </h3>
+
+          <p>
+            ProyecLab propone reunir esta información en un
+            sitio web sencillo, moderno y accesible que permita
+            descubrir, conectar y valorar la comunidad.
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- PROPUESTA -->
+    <section class="cta">
+
+      <div>
+        <span>PROYECTO EPT</span>
+
+        <h2>
+          De una comunidad,
+          <br>
+          para la comunidad.
+        </h2>
+
+        <p>
+          ProyecLab busca convertir la información local
+          en una experiencia digital útil.
+        </p>
+      </div>
+
+      <div class="cta-icon">
+        <svg viewBox="0 0 100 100">
+          <path d="M25 68 L50 25 L75 68"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="8"
+                stroke-linecap="round"
+                stroke-linejoin="round"/>
+          <circle cx="50" cy="25" r="7" fill="currentColor"/>
+        </svg>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- PIE -->
+  <footer>
+    <div class="footer-brand">
+      <strong>ProyecLab</strong>
+      <span>Proyecto de emprendimiento • EPT</span>
+    </div>
+
+    <p>
+      © <span id="year"></span> ProyecLab — Sausal
+    </p>
+  </footer>
+
+  <!-- MODAL -->
+  <div class="modal" id="modal">
+
+    <div class="modal-content">
+
+      <button class="close" onclick="closeModal()">×</button>
+
+      <div id="modalIcon">📍</div>
+
+      <h2 id="modalTitle">Información</h2>
+
+      <p id="modalText"></p>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
